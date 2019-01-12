@@ -1,9 +1,19 @@
-These scripts were used to migration from Exchange 2010 to Office 365.  They should be adaptable for any version of Exchange On-Prem.
+These scripts were used to migrate from Exchange 2010 to Office 365.  They should be adaptable for any version of Exchange On-Prem.
 
 If they aren't already, I will be commenting them with more detail - and polishing up some of the code as needed.
 
 Feel free to take them as-is, and build off them.  These have had all proprietary company information removed.
 
 NOTE: These have not been tested since removing the proprietary information.
+
+File Descriptions:
+
+<B>migration-users.csv</b>: This file must contain one field called "Name", and a list of the accounts you want to move (PrimarySMTPAddress)
+00-Start-Migration.ps1: This kicks off the migration of the accounts in migration-users.csv
+02-add-OnMicrosoftAddress.ps1: This will add the Routing Address @your-org.mail.onmicrosoft.com to each account being migrated.
+03-New-License.ps1: This will license your users in Office 365 automatically. You must have the Microsoft Online module installed.
+04-Move-Mailbox.ps1: This script will submit the move batch. Moves will suspend at 95% for manual cut-over/release.
+05-Complete-Move.ps1: This script will release any pending moves in "Suspended" status. This is the cut-over step.
+06-Enable-Archive.ps1: This script will create an archive mailbox for each mailbox in your migration file.
  
 -Jay
