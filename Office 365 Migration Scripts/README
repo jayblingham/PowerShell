@@ -8,7 +8,7 @@ NOTE: These have not been tested since removing the proprietary information.
 
 File Descriptions:
 
-<B>migration-users.csv</b>: This file must contain one field called "Name", and a list of the accounts you want to move (PrimarySMTPAddress)
+migration-users.csv: This file must contain one field called "Name", and a list of the accounts you want to move (PrimarySMTPAddress)
 00-Start-Migration.ps1: This kicks off the migration of the accounts in migration-users.csv
 02-add-OnMicrosoftAddress.ps1: This will add the Routing Address @your-org.mail.onmicrosoft.com to each account being migrated.
 03-New-License.ps1: This will license your users in Office 365 automatically. You must have the Microsoft Online module installed.
