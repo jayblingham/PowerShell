@@ -1,0 +1,9 @@
+These scripts were used to migration from Exchange 2010 to Office 365.  They should be adaptable for any version of Exchange On-Prem.
+
+If they aren't already, I will be commenting them with more detail - and polishing up some of the code as needed.
+
+Feel free to take them as-is, and build off them.  These have had all proprietary company information removed.
+
+NOTE: These have not been tested since removing the proprietary information.
+ 
+-Jay
