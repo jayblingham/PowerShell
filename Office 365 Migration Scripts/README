@@ -6,8 +6,9 @@ Feel free to take them as-is, and build off them.  These have had all proprietar
 
 NOTE: These have not been tested since removing the proprietary information.
 
+------------------
 File Descriptions:
-
+------------------
 migration-users.csv: This file must contain one field called "Name", and a list of the accounts you want to move (PrimarySMTPAddress)
 00-Start-Migration.ps1: This kicks off the migration of the accounts in migration-users.csv
 02-add-OnMicrosoftAddress.ps1: This will add the Routing Address @your-org.mail.onmicrosoft.com to each account being migrated.
