@@ -1,0 +1,1 @@
+Get-MoveRequest | where {$_.Status -eq "AutoSuspended"} | Resume-MoveRequest
